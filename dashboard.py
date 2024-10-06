@@ -8,8 +8,8 @@ from sklearn.preprocessing import StandardScaler
 # Load dataset
 @st.cache
 def load_data():
-    file_path = './Cleaned_PRSA_Data_20130301-20170228.csv'  # Relative path to the file
-    return pd.read_csv(file_path)
+    file_url = 'https://raw.githubusercontent.com/rompahel/DA_Air_Quality/refs/heads/main/Cleaned_PRSA_Data_20130301-20170228(2).csv'
+    return pd.read_csv(file_url)
 
 # Load data
 cleaned_data = load_data()
