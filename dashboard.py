@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 # Load dataset
 @st.cache
 def load_data():
-    file_path = r'D:\Kuliah\Bangkit\Cleaned_PRSA_Data_20130301-20170228.csv'
+    file_path = './Cleaned_PRSA_Data_20130301-20170228.csv'  # Relative path to the file
     return pd.read_csv(file_path)
 
 # Load data
